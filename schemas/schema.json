@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exemplo de Esquema",
+  "description": "Um exemplo simples de um esquema JSON.",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "description": "O nome da pessoa."
+    },
+    "idade": {
+      "type": "integer",
+      "description": "A idade da pessoa.",
+      "minimum": 0
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "O email da pessoa."
+    }
+  },
+  "required": [
+    "nome",
+    "idade"
+  ]
+}
